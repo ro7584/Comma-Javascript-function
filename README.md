@@ -1,0 +1,3 @@
+# Common-Javascript-function
+
+There are something ...
