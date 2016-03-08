@@ -1,3 +1,14 @@
+$(function() {
+    $('.valid_date').on('blur', function() {
+        var val = $(this).val();
+        if ( !isValidDate(val) ) {
+            alert('請輸入正確日期格式 (YYYY/MM/DD)');
+            $(this).addClass('inValid');
+        } else
+            $(this).removeClass('inValid');
+    });
+});
+
 // Validates that the input string is a valid date formatted as "mm/dd/yyyy"
 function isValidDate(dateString)
 {
